@@ -1,0 +1,15 @@
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.csproj.AssemblyReference.cache
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.AssemblyInfoInputs.cache
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.AssemblyInfo.cs
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.csproj.CoreCompileInputs.cache
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\bin\Debug\net8.0-windows\Assistant.Executor.deps.json
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\bin\Debug\net8.0-windows\Assistant.Executor.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\bin\Debug\net8.0-windows\Assistant.Executor.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\bin\Debug\net8.0-windows\Assistant.Core.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\bin\Debug\net8.0-windows\Assistant.Core.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistan.A2CAB520.Up2Date
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\refint\Assistant.Executor.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\ref\Assistant.Executor.dll

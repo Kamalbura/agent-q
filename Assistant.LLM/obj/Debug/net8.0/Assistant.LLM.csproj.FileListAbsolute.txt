@@ -1,0 +1,15 @@
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\bin\Debug\net8.0\Assistant.LLM.deps.json
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\bin\Debug\net8.0\Assistant.LLM.dll
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\bin\Debug\net8.0\Assistant.LLM.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\bin\Debug\net8.0\Assistant.Core.dll
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\bin\Debug\net8.0\Assistant.Core.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.csproj.AssemblyReference.cache
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.AssemblyInfoInputs.cache
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.AssemblyInfo.cs
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.csproj.CoreCompileInputs.cache
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistan.28D98A2B.Up2Date
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.dll
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\refint\Assistant.LLM.dll
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.pdb
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\ref\Assistant.LLM.dll
