@@ -27,13 +27,51 @@ public partial class App : Application
     protected override void OnStartup(StartupEventArgs e)
     {
         ConfigureLogging();
+
+        // Global exception handlers
+        AppDomain.CurrentDomain.UnhandledException += (s, ev) =>
+        {
+            try
+            {
+                Log.Fatal(ev.ExceptionObject as Exception, "Unhandled domain exception");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
+        };
+
+        DispatcherUnhandledException += (s, ev) =>
+        {
+            Log.Error(ev.Exception, "Unhandled UI dispatcher exception");
+            ev.Handled = true;
+        };
+
+        TaskScheduler.UnobservedTaskException += (s, ev) =>
+        {
+            Log.Error(ev.Exception, "Unobserved task exception");
+            ev.SetObserved();
+        };
+
         ShutdownMode = ShutdownMode.OnMainWindowClose;
+
         var services = new ServiceCollection();
         ConfigureServices(services);
-        _serviceProvider = services.BuildServiceProvider();
 
-        var window = _serviceProvider.GetRequiredService<MainWindow>();
-        window.Show();
+        try
+        {
+            _serviceProvider = services.BuildServiceProvider();
+            var window = _serviceProvider.GetRequiredService<MainWindow>();
+            window.Show();
+        }
+        catch (Exception ex)
+        {
+            // If DI or window creation fails, log and show a simple message then exit.
+            Log.Fatal(ex, "Failed to start application");
+            MessageBox.Show($"Failed to start Astra: {ex.Message}", "Startup Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            Shutdown();
+            return;
+        }
 
         base.OnStartup(e);
     }

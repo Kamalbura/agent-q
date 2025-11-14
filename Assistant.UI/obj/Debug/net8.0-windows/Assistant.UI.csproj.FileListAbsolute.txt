@@ -31,3 +31,8 @@ C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\refint\Ass
 C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\Assistant.UI.pdb
 C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\Assistant.UI.genruntimeconfig.cache
 C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\ref\Assistant.UI.dll
+C:\Users\burak\ptojects\agent-q\Assistant.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\burak\ptojects\agent-q\Assistant.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\ConfirmationDialog.baml
+C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\ConfirmationDialog.g.cs
+C:\Users\burak\ptojects\agent-q\Assistant.UI\obj\Debug\net8.0-windows\Assistant.UI.sourcelink.json

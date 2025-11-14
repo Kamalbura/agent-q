@@ -51,7 +51,69 @@ public sealed class VisionLlmAdapterStub : IVisionLlmAdapter
         var uiElements = context.UiTree;
         var firstElement = uiElements.FirstOrDefault();
         var ambiguousName = uiElements.Skip(1).FirstOrDefault()?.Name ?? firstElement?.Name ?? "Control";
+        // Simple intent mapping: if user asked to open an app, return an open_app action when allowed.
+        var normalized = (intent ?? string.Empty).Trim().ToLowerInvariant();
+        if (normalized.StartsWith("open ") || normalized.Contains("open "))
+        {
+            // Try to extract an app name after 'open' and map common app names to executables
+            var parts = normalized.Split(' ', StringSplitOptions.RemoveEmptyEntries);
+            string appName = parts.Length >= 2 ? string.Join(' ', parts[1..]) : string.Empty;
+            string? exe = null;
 
+            // Common app name -> executable mapping
+            var mapping = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+            {
+                ["notepad"] = "notepad.exe",
+                ["calculator"] = "calc.exe",
+                ["calc"] = "calc.exe",
+                ["paint"] = "mspaint.exe",
+                ["mspaint"] = "mspaint.exe",
+                ["edge"] = "msedge.exe",
+                ["chrome"] = "chrome.exe",
+                ["explorer"] = "explorer.exe",
+                ["file explorer"] = "explorer.exe",
+                ["files"] = "explorer.exe",
+                ["code"] = "code.exe",
+                ["visual studio code"] = "code.exe",
+                ["vscode"] = "code.exe",
+                ["word"] = "winword.exe",
+                ["excel"] = "excel.exe",
+                ["powerpoint"] = "powerpnt.exe",
+                ["terminal"] = "wt.exe"
+            };
+
+            foreach (var kv in mapping)
+            {
+                if (appName.Contains(kv.Key, StringComparison.OrdinalIgnoreCase) || normalized.Contains(kv.Key, StringComparison.OrdinalIgnoreCase))
+                {
+                    exe = kv.Value;
+                    break;
+                }
+            }
+
+            if (!string.IsNullOrWhiteSpace(exe))
+            {
+                var plan = new List<object>
+                {
+                    new
+                    {
+                        type = ActionTypes.OpenApp,
+                        args = new
+                        {
+                            target = exe,
+                            metadata = new Dictionary<string, string>
+                            {
+                                ["source"] = "vision_stub"
+                            }
+                        }
+                    }
+                };
+
+                return plan.ToArray();
+            }
+        }
+
+        // Fallback sample plan (keeps previous sample behavior)
         var clickBounds = new
         {
             x = context.ScreenBounds.X + context.ScreenBounds.Width + 50,
@@ -60,7 +122,7 @@ public sealed class VisionLlmAdapterStub : IVisionLlmAdapter
             height = 25
         };
 
-        var plan = new List<object>
+        var fallback = new List<object>
         {
             new
             {
@@ -101,6 +163,6 @@ public sealed class VisionLlmAdapterStub : IVisionLlmAdapter
             }
         };
 
-        return plan.ToArray();
+        return fallback.ToArray();
     }
 }

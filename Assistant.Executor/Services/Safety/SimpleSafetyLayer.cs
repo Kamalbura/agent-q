@@ -13,7 +13,20 @@ namespace Assistant.Executor.Services.Safety;
 /// </summary>
 public sealed class SimpleSafetyLayer : ISafetyLayer
 {
-    private readonly HashSet<string> _allowlist = new(StringComparer.OrdinalIgnoreCase) { "notepad.exe", "calc.exe" };
+    private readonly HashSet<string> _allowlist = new(StringComparer.OrdinalIgnoreCase)
+        {
+            "notepad.exe",
+            "calc.exe",
+            "mspaint.exe",
+            "msedge.exe",
+            "chrome.exe",
+            "explorer.exe",
+            "code.exe",
+            "winword.exe",
+            "excel.exe",
+            "powerpnt.exe",
+            "wt.exe"
+        };
     private readonly ILogger _logger;
 
     public SimpleSafetyLayer(ILogger logger)

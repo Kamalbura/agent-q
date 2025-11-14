@@ -13,3 +13,4 @@ C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.dll
 C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\refint\Assistant.LLM.dll
 C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.pdb
 C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\ref\Assistant.LLM.dll
+C:\Users\burak\ptojects\agent-q\Assistant.LLM\obj\Debug\net8.0\Assistant.LLM.sourcelink.json

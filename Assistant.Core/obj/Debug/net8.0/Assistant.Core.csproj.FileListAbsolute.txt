@@ -10,3 +10,4 @@ C:\Users\burak\ptojects\agent-q\Assistant.Core\obj\Debug\net8.0\Assistant.Core.d
 C:\Users\burak\ptojects\agent-q\Assistant.Core\obj\Debug\net8.0\refint\Assistant.Core.dll
 C:\Users\burak\ptojects\agent-q\Assistant.Core\obj\Debug\net8.0\Assistant.Core.pdb
 C:\Users\burak\ptojects\agent-q\Assistant.Core\obj\Debug\net8.0\ref\Assistant.Core.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Core\obj\Debug\net8.0\Assistant.Core.sourcelink.json

@@ -13,3 +13,4 @@ C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assi
 C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\refint\Assistant.Executor.dll
 C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.pdb
 C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\ref\Assistant.Executor.dll
+C:\Users\burak\ptojects\agent-q\Assistant.Executor\obj\Debug\net8.0-windows\Assistant.Executor.sourcelink.json

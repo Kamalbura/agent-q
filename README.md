@@ -53,3 +53,29 @@ The `Assistant.LLM` project currently returns mocked plans. When integrating wit
 ## Continuous Integration
 
 `.github/workflows/ci.yml` runs `dotnet build` and `dotnet test` on every pull request using Windows runners, keeping the WPF overlay healthy.
+
+## Run Scripts (Windows)
+
+To simplify first-run and development, the repository includes helper scripts in the repo root:
+
+- `Setup-Astra.ps1` — first-run setup: restores packages and builds the solution.
+- `Run-Astra.ps1` — builds and runs the `Assistant.UI` project (or runs the built EXE with `-UseBuiltExe`).
+- `RunAstra.bat` — Windows batch wrapper that runs `dotnet run` for the UI.
+
+Examples:
+
+PowerShell (build & run):
+```powershell
+.\Setup-Astra.ps1
+.\Run-Astra.ps1
+```
+
+Run the already-built EXE:
+```powershell
+.\Run-Astra.ps1 -UseBuiltExe
+```
+
+Or with CMD:
+```cmd
+RunAstra.bat
+```
